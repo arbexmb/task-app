@@ -85,7 +85,7 @@ router.delete('/tasks/:id', auth, async (req, res) => {
     }
     res.status(200).send({ success: 'Task delete succesfull' })
   } catch (e) {
-    res.status(500).send(e)
+    res.status(500).send()
   }
 })
 
